@@ -43,6 +43,10 @@ const sectorSchema = new mongoose.Schema({
   country: {
     type: String,
   },
+  createdAt: {
+    type: Date,
+    default: Date.now(),
+  },
 });
 
 const Sector = mongoose.model("Sector", sectorSchema);
